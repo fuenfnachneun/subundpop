@@ -9,7 +9,7 @@ const Impressum = () => (
     <h1>Impressum</h1>
     <h2>Angaben gemäß § 5 TMG:</h2>
     <p>
-      Bonhagen, Fuchs, Hoffer, Schäfer, Schätzl, Schmid, Vilser, Zwicknagel GbR
+      Bonhagen, Fuchs, Hoffer, Scheffer, Schätzl, Schmid, Vilser, Zwicknagel GbR
     </p>
     <h3>Postanschrift:</h3>
     <p>

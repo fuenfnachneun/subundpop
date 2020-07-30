@@ -13,7 +13,7 @@ const Impressum = () => (
     </p>
     <p>
       <strong>
-        Bonhagen, Fuchs, Hoffer, Schäfer, Schätzl, Schmid, Vilser, Zwicknagel
+        Bonhagen, Fuchs, Hoffer, Scheffer, Schätzl, Schmid, Vilser, Zwicknagel
         GbR
       </strong>
     </p>
