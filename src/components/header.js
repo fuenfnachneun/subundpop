@@ -1,12 +1,12 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from "../images/SUPN.png"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      marginBottom: `2rem`,
     }}
   >
     <div
@@ -16,17 +16,30 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <Link
+        to="/"
+        style={{
+          textDecoration: `none`,
+        }}
+      >
+        <img width="200" src={logo} alt={siteTitle} />
+      </Link>
+
+      <nav style={{ float: "right", margin: "2.5rem" }}>
+        <ul style={{ display: "flex", flex: 1 }}>
+          {menuLinks.map(link => (
+            <li
+              key={link.name}
+              style={{
+                listStyleType: `none`,
+              }}
+            >
+              <Link to={link.link}>{link.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <div></div>
     </div>
   </header>
 )

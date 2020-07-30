@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `SUPN Treff`,
+    description: `Das Sub und Popkultur Netzwerk Treffen ist ein offenes Netzwerk von und für Akteur*innen aus Regensburg, die ganz verschiedenen Bereichen der lokalen Musikszene angehören: Veranstalter*innen von Clubkonzerten und Festivals, Musiker*innen, Verlagsleute, Booker*innen. Egal, ob DIY oder Profibereich, öffentlich gefördert oder privatwirtschaftlich, vor, auf oder hinter der Bühne - wir haben alle eins gemeinsam: wir brennen für eine lebendige, offene, bunte und vor allem auch starke Pop- und Subkulturszene in Regensburg.`,
     author: `@gatsbyjs`,
+    menuLinks: [
+      {
+        name: "instagram",
+        link: "https://instagram.com/subundpop",
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +30,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/supn_icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
