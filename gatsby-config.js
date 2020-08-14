@@ -5,8 +5,8 @@ module.exports = {
     author: `@gatsbyjs`,
     menuLinks: [
       {
-        name: "instagram",
-        link: "https://instagram.com/subundpop",
+        name: "",
+        link: "",
       },
     ],
   },

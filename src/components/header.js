@@ -2,8 +2,9 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/SUPN.png"
+import insta from "../images/instagram.png"
 
-const Header = ({ siteTitle, menuLinks }) => (
+const Header = ({ siteTitle }) => (
   <header
     style={{
       marginBottom: `2rem`,
@@ -27,16 +28,15 @@ const Header = ({ siteTitle, menuLinks }) => (
 
       <nav style={{ float: "right", margin: "2.5rem" }}>
         <ul style={{ display: "flex", flex: 1 }}>
-          {menuLinks.map(link => (
-            <li
-              key={link.name}
-              style={{
-                listStyleType: `none`,
-              }}
-            >
-              <Link to={link.link}>{link.name}</Link>
-            </li>
-          ))}
+          <li
+            style={{
+              listStyleType: `none`,
+            }}
+          >
+            <Link to="https://instagram.com/subundpop">
+              <img src={insta} alt="Sub & Pop Instagram" width="29" />
+            </Link>
+          </li>
         </ul>
       </nav>
       <div></div>
